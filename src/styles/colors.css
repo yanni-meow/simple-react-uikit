@@ -1,0 +1,12 @@
+:export {
+  dark: #1E1E2C;
+  semitone: #909090;
+  light: #FFFFFF;
+  lightShade: whitesmoke;
+  lightBorder: rgba(30, 30, 44, 0.3);
+  boxShadow: rgba(0, 0, 0, 0.25);
+  main: #ec681b;
+  accent: #FB470F;
+  mistake: #FF2C2C;
+}
+/*# sourceMappingURL=colors.css.map */

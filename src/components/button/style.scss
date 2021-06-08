@@ -1,0 +1,22 @@
+@import '../../styles/colors.scss';
+
+.button {
+    background: $main;
+    padding: 12px 48px;
+    border-radius: 8px;
+    border: 1px solid $accent;
+    margin: 0 auto;
+    color: $light;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+/* hover */
+.button:not(:disabled):not(:checked):hover { color: $lightShade; }
+/* disabled */
+.button:disabled { background-color: $semitone; border: none; cursor: default; }
+// /* active */
+// .button:not(:disabled):active { opacity: .8; }
+// /* focus */
+// .button:focus {}

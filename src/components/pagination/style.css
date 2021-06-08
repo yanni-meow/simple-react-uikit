@@ -1,0 +1,80 @@
+:export {
+  dark: #1E1E2C;
+  semitone: #909090;
+  light: #FFFFFF;
+  lightShade: whitesmoke;
+  lightBorder: rgba(30, 30, 44, 0.3);
+  boxShadow: rgba(0, 0, 0, 0.25);
+  main: #ec681b;
+  accent: #FB470F;
+  mistake: #FF2C2C;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.pagination > :first-child {
+  margin-right: 12px;
+}
+
+.pagination > :last-child {
+  margin-left: 12px;
+}
+
+.pagination__item {
+  padding: 4px;
+}
+
+.pagination__item__btn {
+  border-radius: 4px;
+  height: 32px;
+  width: 32px;
+  background: whitesmoke;
+  color: #1E1E2C;
+}
+
+.pagination__item__btn:hover {
+  color: #909090;
+}
+
+.pagination__item__btn__active {
+  border-radius: 4px;
+  height: 32px;
+  width: 32px;
+  background: #ec681b;
+  color: whitesmoke;
+}
+
+.pagination__item__btn svg {
+  fill: #1E1E2C;
+}
+
+.pagination__item__btn:not(:disabled):hover > svg {
+  fill: #909090;
+}
+
+.pagination__item__btn:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+.pagination__item__btn:disabled * {
+  cursor: default;
+}
+/*# sourceMappingURL=style.css.map */

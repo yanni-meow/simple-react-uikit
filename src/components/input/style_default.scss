@@ -1,0 +1,71 @@
+@import '../../styles/colors.scss';
+
+.input {
+    height: 56px;
+    width: 100%;
+    padding: 24px 56px 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: $lightShade;
+    position: relative;
+    font-weight: 500;
+    color: $dark;
+
+    &:focus {
+        background: $light;
+
+        + .input__placeholder {
+            position: absolute;
+            width: 100%;
+            top: 10px;
+            left: 30px;
+            font-size: 12px;
+            transition: .3s;
+            color: $accent;
+        }
+
+        ~ svg {
+            fill: $accent;
+        }
+    }
+
+    &__box {
+        position: relative;
+        padding: 8px;
+        margin: 0 auto;
+        width: 380px;
+
+        > svg {
+            position: absolute;
+            right: 20px;
+            top: 24px;
+        }
+
+        .eye {
+            position: absolute;
+            right: 52px;
+            top: 24px;
+            cursor: pointer !important;
+            * {cursor: pointer;}
+        }
+    }
+
+    &__placeholder {
+        position: absolute;
+        pointer-events: none;
+        left: 28px;
+        top: 24px;
+        transition: .3s;
+        color: $dark;
+
+        &__done {
+            position: absolute;
+            width: 100%;
+            top: 10px;
+            left: 30px;
+            transition: .3s;
+            font-size: 12px;
+            color: $semitone;
+        }
+    }
+}

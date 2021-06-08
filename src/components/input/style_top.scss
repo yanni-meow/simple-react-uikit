@@ -1,0 +1,66 @@
+@import '../../styles/colors.scss';
+
+.input {
+    height: 56px;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    position: relative;
+    font-weight: 500;
+    color: $dark;
+
+    &:focus {
+        background: transparent;
+
+        + .input__placeholder {
+            position: absolute;
+            width: max-content;
+            padding: 2px 4px;
+            top: -4px;
+            left: 20px;
+            font-size: 12px;
+            transition: .3s;
+            background: $light;
+            color: $dark;
+        }
+    }
+
+    &__box {
+        position: relative;
+        padding: 8px;
+        margin: 0 auto;
+        width: 380px;
+    }
+
+    &__placeholder {
+        position: absolute;
+        pointer-events: none;
+        left: 28px;
+        top: 24px;
+        transition: .3s;
+        color: $dark;
+
+        &__done {
+            position: absolute;
+            width: max-content;
+            padding: 2px 4px;
+            border-radius: 8px;
+            top: -4px;
+            left: 20px;
+            font-size: 12px;
+            transition: .3s;
+            background: $light;
+            color: $semitone;
+        }
+    }
+
+    &__down__text {
+        padding: 0px 16px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: $semitone;
+    }
+}

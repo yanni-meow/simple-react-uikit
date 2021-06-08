@@ -1,0 +1,16 @@
+@import '../../styles/colors.scss';
+
+.stopwatch {
+    width: max-content;
+    padding: 8px;
+    margin: 8px;
+    box-shadow: 0px 0px 8px $boxShadow;
+    border-radius: 4px;
+}
+.timer {
+    width: max-content;
+    padding: 8px;
+    margin: 8px;
+    box-shadow: 0px 0px 8px $boxShadow;
+    border-radius: 4px;
+}

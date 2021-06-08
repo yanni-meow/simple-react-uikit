@@ -1,0 +1,105 @@
+:export {
+  dark: #1E1E2C;
+  semitone: #909090;
+  light: #FFFFFF;
+  lightShade: whitesmoke;
+  lightBorder: rgba(30, 30, 44, 0.3);
+  boxShadow: rgba(0, 0, 0, 0.25);
+  main: #ec681b;
+  accent: #FB470F;
+  mistake: #FF2C2C;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: default;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #909090;
+}
+
+input::-moz-placeholder {
+  color: #909090;
+}
+
+button {
+  cursor: pointer;
+}
+
+button * {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #1E1E2C;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+svg {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=defaultstyles.css.map */

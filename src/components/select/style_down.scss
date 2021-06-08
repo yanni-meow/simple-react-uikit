@@ -1,0 +1,58 @@
+@import '../../styles/colors.scss';
+
+.select {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 12px 8px;
+    width: 360px;
+    background: transparent;
+    color: $dark;
+
+    &__box {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+    }
+
+    &__arrow {
+        padding: 0 12px;
+        cursor: pointer;
+        * {cursor: pointer;}
+    }
+
+    &__input {
+        width: 100%;
+        height: 44px;
+        padding: 0px 4px;        
+        border: none;
+        border-radius: 8px;
+        position: relative;
+        color: $dark;
+        background: transparent;
+    }
+
+    &__list {
+        position: absolute;
+        top: 47px;
+        right: 0;
+        z-index: 5;
+        background: $light;
+        box-shadow: 4px 4px 8px $lightShade;
+        overflow: auto;
+        width: 100%;
+        transition: .3s;
+
+        &__item {
+            text-align: left;
+            padding: 5px;
+
+            &:hover {
+                color: $semitone !important;
+            }
+        }
+
+    }
+}

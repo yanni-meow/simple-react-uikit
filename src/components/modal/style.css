@@ -1,0 +1,36 @@
+:export {
+  dark: #1E1E2C;
+  semitone: #909090;
+  light: #FFFFFF;
+  lightShade: whitesmoke;
+  lightBorder: rgba(30, 30, 44, 0.3);
+  boxShadow: rgba(0, 0, 0, 0.25);
+  main: #ec681b;
+  accent: #FB470F;
+  mistake: #FF2C2C;
+}
+
+.modal {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  top: 10vh;
+  left: 10vw;
+  z-index: 10;
+  border-radius: 12px;
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

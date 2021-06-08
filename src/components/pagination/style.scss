@@ -1,0 +1,45 @@
+@import '../../styles/colors.scss';
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: max-content;
+
+    > :first-child { margin-right: 12px;}
+    > :last-child { margin-left: 12px;}
+
+    &__item {
+        padding: 4px;
+
+        &__btn {
+            border-radius: 4px;
+            height: 32px;
+            width: 32px;
+            background: $lightShade;
+            color: $dark;
+            &:hover {
+                color: $semitone;
+            }
+            &__active {
+                border-radius: 4px;
+                height: 32px;
+                width: 32px;
+                background: $main;
+                color: $lightShade;
+            }
+            svg { 
+                fill: $dark;
+            }
+            &:not(:disabled):hover > svg {
+                fill: $semitone;
+            }
+            &:disabled { 
+                opacity: .5; 
+                cursor: default; 
+                * { cursor: default; }
+            }
+        }
+    }
+}
